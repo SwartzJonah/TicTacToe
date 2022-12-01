@@ -38,6 +38,7 @@ const gameBoard = (() => {
         console.log(board);
         controller.round = 0;
         controller.nextPlayer(1);
+        controller.winner = false;
         const reset = document.querySelectorAll('.piece');
         reset.forEach(piece => {
             piece.textContent = " ";
